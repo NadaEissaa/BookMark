@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Freeman&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Freeman&family=Righteous&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Freeman&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Righteous&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class=" container mt-5">
+        <h1 class="text-center p-5 borderStyle dotted-bottom-border">Bookmarker</h1>
+        <h3 class="text-center p-3"><i class="bi bi-bookmark fs-4"></i> Bookmark your favorite sites <i class="bi bi-bookmark fs-4"></i></h3>
+    </div>
+
+    <div class="container">
+        <label for="siteName" class="labelStyle mb-2">Site Name</label>
+        <input type="text" id="siteName" class="form-control mb-3" placeholder="Bookmark Name" oninput="validateInput(this)" />
+        <div class="alert bg-danger text-bg-primary d-none">Site name must contain at least 3 characters</div>
+
+        <label for="siteURL" class="labelStyle mb-2">Site URL</label>
+        <input type="text" id="siteURL" class="form-control mb-3" placeholder="Website URL" oninput="validateInput(this)" />
+        <div class="alert bg-danger text-bg-primary d-none">Site URL must be a valid one</div>
+        <div class="d-flex flex-row justify-content-center mb-5 pb-4 dotted-bottom-border">
+            <button type="submit" class="btn btn-warning px-5 submit-btn" onclick="addBook()">Submit</button>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-evenly" id="tableData">
+        <table class="table-primary bg-light p-5 w-100 text-center">
+            <thead>
+                <tr>
+                    <th class="p-3">Index</th>
+                    <th class="p-3">Website Name</th>
+                    <th class="p-3">Visit</th>
+                    <th class="p-3">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+              
+            </tbody>
+           
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+.dotted-bottom-border {
+    border-bottom: 2px dotted #000; /* You can change the color and thickness */
+}
+
+
+body{
+    background-color: #F7ECDE;
+}
+h3{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(to right, #5f5fff, #feb47b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+
+}
+.book-m{
+    font-size: medium;
+    color:black
+}
+.labelStyle{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.submit-btn{
+    color:white;
+
+}
+.submit-btn:hover{
+    color:white;
+    background-color: orange;
+}
+.table-primary{
+    
+}
